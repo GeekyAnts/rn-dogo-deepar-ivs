@@ -46,7 +46,7 @@ const DeepARView = forwardRef<IDeepARHandle, IDeepARProps>(
     const nativeExecute = (name: string, params?: Array<any>) => {
       return UIManager.dispatchViewManagerCommand(
         findNodeHandle(nativeRef.current),
-        UIManager.getViewManagerConfig(NATIVE_VIEW_KEY).Commands[name],
+        UIManager.getViewManagerConfig(NATIVE_VIEW_KEY).Commands[name] as number,
         params
       );
     };
