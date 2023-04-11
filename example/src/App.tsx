@@ -1,12 +1,11 @@
 import * as React from 'react';
 
 import { StyleSheet, View } from 'react-native';
-import { RnGeekyantsDeeparIvsView } from 'rn-geekyants-deepar-ivs';
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <RnGeekyantsDeeparIvsView color="#32a852" style={styles.box} />
+      
     </View>
   );
 }
