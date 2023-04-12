@@ -1,0 +1,26 @@
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  package="com.rndogodeeparivs">
+
+  <uses-feature android:name="android.hardware.camera"/>
+  <uses-feature android:name="android.hardware.camera.autofocus"/>
+
+  <uses-permission android:name="android.permission.INTERNET"/>
+  <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+
+  <uses-permission android:name="android.permission.CAMERA"/>
+  <uses-permission android:name="android.hardware.camera.autofocus"/>
+  <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+  <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+  <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+
+  <uses-permission android:name="android.permission.BLUETOOTH" />
+  <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+
+  <permission android:name="android.permission.BLUETOOTH" android:label="BLUETOOTH"
+    tools:ignore="ReservedSystemPermission" />
+  <permission android:name="android.permission.BLUETOOTH_ADMIN"
+    tools:ignore="ReservedSystemPermission" />
+
+</manifest>
