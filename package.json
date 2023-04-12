@@ -13,7 +13,7 @@
     "android",
     "ios",
     "cpp",
-    "rn-dogo-deepar-ivs.podspec",
+    "react-native-deepar.podspec",
     "!lib/typescript/example",
     "!android/build",
     "!ios/build",
@@ -45,9 +45,9 @@
   "author": "GeekyAnts",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/ridvanaltun/rn-dogo-deepar-ivs/issues"
+    "url": "https://github.com/ridvanaltun/react-native-deepar/issues"
   },
-  "homepage": "https://github.com/ridvanaltun/rn-dogo-deepar-ivs#readme",
+  "homepage": "https://github.com/ridvanaltun/react-native-deepar#readme",
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
   },
@@ -172,7 +172,7 @@
     ]
   },
   "directories": {
-    "doc": "docs",
+  
     "example": "example",
     "lib": "lib"
   }
