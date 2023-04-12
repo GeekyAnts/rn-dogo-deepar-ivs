@@ -291,8 +291,9 @@ const CameraScreen = ({navigation}: {navigation: any}) => {
       return null;
     }
 
-    let token = '0344626d98a13bbbac09959d1a2eac1ca77484532fac15d23ce5bb6ad71d1f04c9b80ed3e4917cf4';
-    
+    let token =
+      '0344626d98a13bbbac09959d1a2eac1ca77484532fac15d23ce5bb6ad71d1f04c9b80ed3e4917cf4';
+
     return (
       <>
         <DeepARView
@@ -300,7 +301,6 @@ const CameraScreen = ({navigation}: {navigation: any}) => {
           apiKey={token}
           position={cameraPosition}
           videoWarmup={false}
-          
           onCameraSwitched={() => {
             setSwitchCameraInProgress(false);
           }}
