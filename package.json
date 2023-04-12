@@ -1,7 +1,7 @@
 {
   "name": "rn-dogo-deepar-ivs",
-  "version": "0.10.5",
-  "description": "DeepAR wrapper for React-Native",
+  "version": "0.1.0",
+  "description": "DeepAR wrapper for React-Native which can be streamed easily to Amazon IVS",
   "main": "lib/commonjs/index",
   "module": "lib/module/index",
   "types": "lib/typescript/index.d.ts",
@@ -40,14 +40,14 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/hasnentai/rn-deepar-stream-amazon-ivs.git"
+    "url": "git+https://github.com/GeekyAnts/rn-dogo-deepar-ivs"
   },
   "author": "GeekyAnts",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/ridvanaltun/react-native-deepar/issues"
+    "url": "https://github.com/GeekyAnts/rn-dogo-deepar-ivs/issues"
   },
-  "homepage": "https://github.com/ridvanaltun/react-native-deepar#readme",
+  "homepage": "https://github.com/GeekyAnts/rn-dogo-deepar-ivs#readme",
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
   },
