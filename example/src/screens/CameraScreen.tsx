@@ -299,6 +299,8 @@ const CameraScreen = ({navigation}: {navigation: any}) => {
         <DeepARView
           ref={deepARRef}
           apiKey={token}
+          streamDeepArView = {true}
+          ivsStreamKey='sk_ap-south-1_bfXXgopmOq8o_t7I6sURDIjTWepsVRbijqvSLieLVdd'
           position={cameraPosition}
           videoWarmup={false}
           onCameraSwitched={() => {
