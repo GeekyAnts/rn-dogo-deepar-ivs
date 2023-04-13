@@ -81,6 +81,16 @@ public class RNTDeepARViewManager extends SimpleViewManager<RNTDeepAR> {
     // ..
   }
 
+  @ReactProp(name = "ivsStreamKey")
+  public void setIvsStreamKey(RNTDeepAR deepARView,String streamKey){
+    deepARView.setIvsStreamKey(streamKey);
+  }
+
+  @ReactProp(name = "streamDeepArView")
+  public void setStreamDeepArView(RNTDeepAR deepARView, String enabled) {
+    // ..
+  }
+
   @ReactProp(name = "cameraPosition")
   public void setCameraPosition(RNTDeepAR deepARView, String cameraPosition) {
     int position = CameraSelector.LENS_FACING_FRONT;

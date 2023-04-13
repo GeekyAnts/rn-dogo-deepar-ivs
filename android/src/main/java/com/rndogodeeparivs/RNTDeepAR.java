@@ -76,8 +76,10 @@ public class RNTDeepAR extends FrameLayout implements AREventListener, SurfaceHo
   private Surface surface;
 
   private boolean streamRunning = false;
-  private final String INGEST_SERVER = "rtmps://d88492bdfa12.global-contribute.live-video.net:443/app/";
-  private final String STREAM_KEY = "sk_ap-south-1_bfXXgopmOq8o_t7I6sURDIjTWepsVRbijqvSLieLVdd";
+  private  String INGEST_SERVER = "rtmps://d88492bdfa12.global-contribute.live-video.net:443/app/";
+  private  String streamKey;
+
+  private boolean streamDeepArView = false;
 
   public RNTDeepAR(Context context) {
     super(context);
@@ -166,7 +168,18 @@ public class RNTDeepAR extends FrameLayout implements AREventListener, SurfaceHo
     FrameLayout layout = (FrameLayout) findViewById(R.id.rootLayout);
     layout.addView(view, 0);
 
-    broadcastSession.start(INGEST_SERVER, STREAM_KEY);
+    startStreaming();
+
+  }
+
+  private void startStreaming(){
+    if(broadcastSession!=null) {
+      if (streamDeepArView && this.streamKey!=null) {
+        broadcastSession.start(INGEST_SERVER, this.streamKey);
+      } else {
+        broadcastSession.stop();
+      }
+    }
   }
 
   @Override
@@ -279,6 +292,18 @@ public class RNTDeepAR extends FrameLayout implements AREventListener, SurfaceHo
     }
 
     deepAr.setLicenseKey(apiKey);
+  }
+
+
+  public void setIvsStreamKey(String streamKey){
+    Log.i("IVS","SETTING UP STREAM KEY");
+    this.streamKey = streamKey;
+  }
+
+  public void setStreamDeepArView(boolean enable){
+    Log.i("IVS","SETTING UP STREAM DEEP AR VIEW");
+   this.streamDeepArView = enable;
+   this.startStreaming();
   }
 
   public void switchCamera(int cameraDevice) {

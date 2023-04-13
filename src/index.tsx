@@ -48,6 +48,8 @@ export interface IRNTDeepARView {
   apiKey: string;
   cameraPosition?: CameraPosition;
   videoWarmup?: string;
+  streamDeepArView?: string;
+  ivsStreamKey?: string;
   onEventSent: ({nativeEvent}: {nativeEvent: IDeepAREvent}) => void;
 }
 
@@ -73,6 +75,8 @@ export interface IDeepARProps extends ViewProps {
   apiKey: string;
   position?: CameraPosition;
   videoWarmup?: boolean;
+  streamDeepArView?: boolean;
+  ivsStreamKey?: string;
   onEventSent?: (event: IDeepAREvent) => void;
   onInitialized?: () => void;
   onEffectSwitched?: (slot: string) => void;
