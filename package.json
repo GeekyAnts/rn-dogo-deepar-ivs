@@ -1,6 +1,6 @@
 {
   "name": "rn-dogo-deepar-ivs",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "DeepAR wrapper for React-Native which can be streamed easily to Amazon IVS",
   "main": "lib/commonjs/index",
   "module": "lib/module/index",
