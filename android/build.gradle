@@ -64,19 +64,7 @@ dependencies {
   //noinspection GradleDynamicVersion
   implementation "com.facebook.react:react-native:0.71.0-rc.0"  // From node_modules
   implementation fileTree(dir: "libs", include: ["*.aar"])
-  //implementation project(':deepar-dogo')
-  //implementation project(':deepar-dogo:deepar-3.4.4')
 
-  implementation(project(':deepar-dogo')) {
-    // Use the default configuration of the :deepar-dogo project
-    // This is the same as specifying 'implementation(project(":deepar-dogo"))'
-    // because 'default' is the default configuration for a project
-    targetConfiguration 'default'
-
-    // Set any required attributes here, if necessary
-    // For example, if you need to specify the build type, you can use:
-    // attributes.attribute(com.android.build.api.attributes.BuildTypeAttr.NAME, com.android.build.api.attributes.BuildType.DEBUG)
-  }
   implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
   implementation 'androidx.appcompat:appcompat:1.6.1'
 
