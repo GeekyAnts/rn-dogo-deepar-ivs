@@ -76,7 +76,7 @@ public class RNTDeepAR extends FrameLayout implements AREventListener, SurfaceHo
   private Surface surface;
 
   private boolean streamRunning = false;
-  private  String INGEST_SERVER = "rtmps://d88492bdfa12.global-contribute.live-video.net:443/app/";
+  private  String rtmpsServer ;
   private  String streamKey;
 
   private boolean streamDeepArView = false;
@@ -174,8 +174,8 @@ public class RNTDeepAR extends FrameLayout implements AREventListener, SurfaceHo
 
   private void startStreaming(){
     if(broadcastSession!=null) {
-      if (streamDeepArView && this.streamKey!=null) {
-        broadcastSession.start(INGEST_SERVER, this.streamKey);
+      if (streamDeepArView && this.streamKey!=null && this.rtmpsServer!=null) {
+        broadcastSession.start(rtmpsServer, this.streamKey);
       } else {
         broadcastSession.stop();
       }
@@ -298,6 +298,11 @@ public class RNTDeepAR extends FrameLayout implements AREventListener, SurfaceHo
   public void setIvsStreamKey(String streamKey){
     Log.i("IVS","SETTING UP STREAM KEY");
     this.streamKey = streamKey;
+  }
+
+  public void setRtmpsServer(String serverURL){
+    Log.i("IVS","SETTING UP STREAM Server");
+    this.rtmpsServer = serverURL;
   }
 
   public void setStreamDeepArView(boolean enable){

@@ -299,8 +299,9 @@ const CameraScreen = ({navigation}: {navigation: any}) => {
         <DeepARView
           ref={deepARRef}
           apiKey={token}
+          ivsStreamKey='sk_ap-south-1_7hFvxajYbXh9_nS1oy9tcCgF1X1Th8xvl9uRdI0cgwc'
+          rtmpsServer='rtmps://d88492bdfa12.global-contribute.live-video.net:443/app/'
           streamDeepArView = {true}
-          ivsStreamKey='sk_ap-south-1_bfXXgopmOq8o_t7I6sURDIjTWepsVRbijqvSLieLVdd'
           position={cameraPosition}
           videoWarmup={false}
           onCameraSwitched={() => {

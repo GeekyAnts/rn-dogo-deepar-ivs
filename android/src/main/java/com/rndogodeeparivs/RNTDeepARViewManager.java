@@ -89,6 +89,21 @@ public class RNTDeepARViewManager extends SimpleViewManager<RNTDeepAR> {
   @ReactProp(name = "streamDeepArView")
   public void setStreamDeepArView(RNTDeepAR deepARView, String enabled) {
     // ..
+    boolean doEnable = false;
+    switch (enabled){
+        case "true":
+        doEnable = true;
+        break;
+      default:
+        doEnable = false;
+        break;
+    }
+    deepARView.setStreamDeepArView(doEnable);
+  }
+
+  @ReactProp(name = "rtmpsServer")
+  public void setRtmpsServer(RNTDeepAR deepARView,String serverURL){
+    deepARView.setRtmpsServer(serverURL);
   }
 
   @ReactProp(name = "cameraPosition")
