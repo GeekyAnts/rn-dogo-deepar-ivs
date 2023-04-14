@@ -3,8 +3,10 @@ apply from: file("../node_modules/@react-native-community/cli-platform-android/n
 include ':app'
 includeBuild('../node_modules/react-native-gradle-plugin')
 
-include ':reactnativedeepar'
-project(':reactnativedeepar').projectDir = new File(rootProject.projectDir, '../../android')
+include ':rndogodeeparivs' ,':deepar-dogo'
+
+project(':rndogodeeparivs').projectDir = new File(rootProject.projectDir, '../../android')
+project(':deepar-dogo').projectDir = new File(rootProject.projectDir, '../../android')
 
 if (settings.hasProperty("newArchEnabled") && settings.newArchEnabled == "true") {
     include(":ReactAndroid")

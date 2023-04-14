@@ -1,0 +1,5 @@
+configurations {
+  implementation
+}
+configurations.maybeCreate("default")
+artifacts.add("default", file('libs/deepar-3.4.4.aar'))

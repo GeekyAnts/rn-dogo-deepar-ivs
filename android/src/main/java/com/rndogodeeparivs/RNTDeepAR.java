@@ -163,7 +163,7 @@ public class RNTDeepAR extends FrameLayout implements AREventListener, SurfaceHo
 
     deepAr.setRenderSurface(surface, streamingWidth, streamingHeight);
 
-    TextureView view = broadcastSession.getPreviewView(BroadcastConfiguration.AspectMode.FIT);
+    TextureView view = broadcastSession.getPreviewView(BroadcastConfiguration.AspectMode.FILL);
 
     FrameLayout layout = (FrameLayout) findViewById(R.id.rootLayout);
     layout.addView(view, 0);

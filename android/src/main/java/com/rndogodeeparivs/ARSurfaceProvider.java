@@ -15,7 +15,7 @@ import androidx.core.content.ContextCompat;
 import java.util.Timer;
 import java.util.TimerTask;
 
-import ai.deepar.ar.DeepAR;
+import ai.deepar.ar .DeepAR;
 
 /**
  * Surface provider used for CameraX preview use-case that provides DeepAR's external GL texture

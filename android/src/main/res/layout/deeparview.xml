@@ -4,12 +4,7 @@
   xmlns:tools="http://schemas.android.com/tools"
   android:layout_width="match_parent"
   android:layout_height="match_parent"
-  tools:context=".MainActivity">
-
-  <RelativeLayout
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
-
+  >
     <LinearLayout
       android:layout_width="match_parent"
       android:layout_height="match_parent"
@@ -17,24 +12,18 @@
       android:animateLayoutChanges="true">
 
 
-
-
       <FrameLayout
         android:id="@+id/rootLayout"
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
+        android:layout_width="fill_parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_height="0dp"
         android:layout_weight="1"/>
 
     </LinearLayout>
-    <Button
-      android:id="@+id/startCall"
-      android:layout_width="200dp"
-      android:layout_height="50dp"
-      android:layout_marginBottom="30dp"
-      android:text="Start the call"
-      android:layout_alignParentBottom="true"
-      android:layout_centerHorizontal="true"/>
-  </RelativeLayout>
+
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
