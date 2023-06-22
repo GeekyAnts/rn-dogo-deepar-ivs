@@ -292,15 +292,15 @@ const CameraScreen = ({navigation}: {navigation: any}) => {
     }
 
     let token =
-      '0344626d98a13bbbac09959d1a2eac1ca77484532fac15d23ce5bb6ad71d1f04c9b80ed3e4917cf4';
+      'YOUR DEEPAR TOKEN';
 
     return (
       <>
         <DeepARView
           ref={deepARRef}
           apiKey={token}
-          ivsStreamKey='sk_ap-south-1_7hFvxajYbXh9_nS1oy9tcCgF1X1Th8xvl9uRdI0cgwc'
-          rtmpsServer='rtmps://d88492bdfa12.global-contribute.live-video.net:443/app/'
+          ivsStreamKey='YOUR IVS STREAM KEY'
+          rtmpsServer='RTMPS SERVER URL'
           streamDeepArView = {true}
           position={cameraPosition}
           videoWarmup={false}
